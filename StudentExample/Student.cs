@@ -8,10 +8,14 @@ namespace StudentExample
 {
     class Student
     {
-        String name { get; set; }
-        int exam1;
-        int exam2;
+        public String name { get; set; }
+        int exam1 { get; set; }
+        int exam2 { get; set; }
         char lettergrade;
+        
+        public Student(String arg_name,)
+
+
 
     }
 }
