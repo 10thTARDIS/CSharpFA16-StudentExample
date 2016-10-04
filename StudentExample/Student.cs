@@ -13,7 +13,12 @@ namespace StudentExample
         int exam2 { get; set; }
         char lettergrade;
         
-        public Student(String arg_name,)
+        public Student(String arg_name, int ex1, int ex2)
+        {
+            name = arg_name;
+            exam1 = ex1;
+            exam2 = ex2;
+        }
 
 
 

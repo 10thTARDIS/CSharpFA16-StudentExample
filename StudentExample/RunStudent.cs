@@ -15,8 +15,25 @@ namespace StudentExample
             // This could be a menu
             // Or it could be something else.
             RunStudent rs = new RunStudent();
-            rs.populateStudents();
+            rs.topMenu();
 
+        }
+
+        public void topMenu()
+        {
+            int input;
+
+            do
+            {
+                Console.WriteLine("1) Populate Students");
+                Console.WriteLine("2) Exit");
+
+                input = Convert.ToInt32(Console.ReadLine());
+                if (input == 1)
+                {
+                    populateStudents();
+                }
+            } while (input != 2);
         }
 
         public void populateStudents()
