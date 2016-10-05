@@ -47,6 +47,9 @@ namespace StudentExample
                 Console.WriteLine("Please enter Exam Two score: ");
                 int tempex2 = Convert.ToInt32(Console.ReadLine());
 
+                Student stu = new Student();
+                stu.determineLetterGrade();
+
                 stuArray[i] = new Student(tempname, tempex1, tempex2);
             }
         }

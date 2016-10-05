@@ -11,7 +11,7 @@ namespace StudentExample
         public String name { get; set; }
         int exam1 { get; set; }
         int exam2 { get; set; }
-        char lettergrade;
+        int lettergrade;
         double avg;
         
         public Student(String arg_name, int ex1, int ex2)
@@ -31,23 +31,25 @@ namespace StudentExample
             if(avg >= 90)
             {
                 lettergrade = 'A';
+                Console.WriteLine(name + "'s final grade is: A);
             }
-            if (avg >= 80 && avg <= 90)
+            else if (avg >= 80 && avg <= 90)
             {
                 lettergrade = 'B';
             }
-            if (avg >= 70 && avg <= 80)
+            else if (avg >= 70 && avg <= 80)
             {
                 lettergrade = 'C';
             }
-            if (avg >= 60 && avg <= 70)
+            else if (avg >= 60 && avg <= 70)
             {
                 lettergrade = 'D';
             }
-            if (avg <= 60)
+            else if (avg <= 60)
             {
                 lettergrade = 'F';
             }
+            Console.WriteLine(name + "'s average score was " + lettergrade);
         }
 
 
