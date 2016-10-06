@@ -11,7 +11,7 @@ namespace StudentExample
         public String name { get; set; }
         int exam1 { get; set; }
         int exam2 { get; set; }
-        int lettergrade;
+        char lettergrade;
         double avg;
         
         public Student(String arg_name, int ex1, int ex2)
@@ -23,7 +23,7 @@ namespace StudentExample
 
         public void calcAvg()
         {
-            avg = (exam1 + exam2) / 2;
+            avg = (exam1 + exam2) / 2.0;
         }
 
         public void determineLetterGrade()
@@ -31,17 +31,16 @@ namespace StudentExample
             if(avg >= 90)
             {
                 lettergrade = 'A';
-                Console.WriteLine(name + "'s final grade is: A);
             }
-            else if (avg >= 80 && avg <= 90)
+            else if (avg >= 80)
             {
                 lettergrade = 'B';
             }
-            else if (avg >= 70 && avg <= 80)
+            else if (avg >= 70)
             {
                 lettergrade = 'C';
             }
-            else if (avg >= 60 && avg <= 70)
+            else if (avg >= 60)
             {
                 lettergrade = 'D';
             }
